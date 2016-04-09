@@ -1,4 +1,4 @@
-# sixmins-client
+# Trims-client
 
 This project is developed by node-webkit for universial propose.   
 >node-webkit + angularjs + bootstrap
@@ -13,5 +13,3 @@ This project is developed by node-webkit for universial propose.
 
 ## Testing
 
-
-#### alex
