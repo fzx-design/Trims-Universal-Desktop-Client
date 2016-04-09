@@ -1,0 +1,22 @@
+<div class="trims-commit-preview">
+	<div class="select">
+        <input type="checkbox" class="trims-checkbox" ng-model="value.selected">
+	</div>
+	<div class="preview">
+		<div class="imgOut">
+			<img ng-src="{{value.snapshotUrl}}">
+			<span ng-show="value.lock" class="lock"></span>
+		</div>
+	</div>
+	<div class="fileInfo">
+		<div class="name">
+			<span trims-circle-mark type="value.operation" isself="'false'"></span>
+			<span class="text">{{value.name}}</span>
+		</div>
+		<div class="msg">
+			<textarea type="text" placeholder="输入 {{value.name}} 的更新说明" ng-model="value.msg"></textarea>
+		</div>
+
+        <button class="trims-btn-sub" style="width: 66px;" ng-click="toggleLock()">{{value.lock?'解锁':'锁定'}}</button>
+	</div>
+</div>

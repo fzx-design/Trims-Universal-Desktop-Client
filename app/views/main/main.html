@@ -1,0 +1,27 @@
+<div class="main">
+
+    <!--    title bar    -->
+    <ng-include src='"views/main/titlebar.html"'></ng-include>
+
+    <!--    library      -->
+    <ng-include src='"views/main/library.html"'></ng-include>
+
+    <!--    tab bar    -->
+<!--
+    <tabset class="trims-tabset" justified="true" ng-class="openedTabs.length!=1?'trims-tab-show':'trims-tab-hide'">
+        <tab class="trims-tab">
+            <tab-heading>
+                <span>资源库</span>
+            </tab-heading>
+            <ng-include src='"views/main/library.html"'></ng-include>
+        </tab>
+        <tab select="changeTab(theTab)" class="trims-tab" ng-repeat="theTab in openedTabs">
+            <tab-heading>
+                <img src="images/icon/icon_close.png" class="trims-tab-close" />
+                <span>{{theTab.title}}</span>
+            </tab-heading>
+        </tab>
+    </tabset>
+-->
+
+</div>

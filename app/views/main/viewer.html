@@ -1,0 +1,43 @@
+<div class="library" style="{{projects.showSideView?'margin-left:178px;':''}}" ng-click="clearSelected()">
+    <div class="project" trims-scroll >
+
+        <div class="updates">
+            <div class="content">
+                <div trims-preview value='preview' mode='viewer.mode' type='dynamic' ng-repeat="preview in viewer.updates" trims-radio="preview" ng-model="$parent.$parent.$parent.viewer.selected"></div>
+            </div>
+        </div>
+     
+        <div class="files">
+            <div class="title">
+                <p>{{viewer.files.length}} 个文件</p>
+            </div>
+            <div class="content">
+                <div trims-preview value='preview' mode='viewer.mode' type='static' ng-repeat="preview in viewer.files" trims-radio="preview" ng-model="$parent.$parent.$parent.viewer.selected"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="action">
+        <div class="user" style="{{projects.showSideView?'opacity:0;':''}}">
+            <div style="float: left;">
+                <img class="avatar" ng-src="{{user.avatar}}">
+            </div>
+            <div style="float: left;">
+                <div class="info">
+                    <p>{{user.name}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="trims-switch-group">
+            <button class="trims-btn-sub" ng-model="viewer.mode" btn-radio="'grid'">
+                <span class="icon_view_grid"></span>
+            </button>
+            <button class="trims-btn-sub" ng-model="viewer.mode" btn-radio="'list'">
+                <span class="icon_view_list"></span>
+            </button>
+        </div>
+
+        <div class="title">{{viewer.updates.length}} 个待同步的资源更新</div>
+    </div>
+
+</div>

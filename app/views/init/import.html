@@ -1,0 +1,8 @@
+<div>导入项目</div>
+
+<input type="text" ng-model="folder" ng-change="changedByTextBox()">
+<input type="file"  onchange="angular.element(this).scope().changed(this.value)" nwdirectory>
+
+<button ng-click="import()">确定</button>
+
+<a ui-sref='init.main'>back</a>

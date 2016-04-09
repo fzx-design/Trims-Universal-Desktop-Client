@@ -1,0 +1,59 @@
+<div class="inspector" ng-controller="ExporterInspectorCtrl">
+    <div class=" trims-switch-group" style="width: 264px; height: 28px; display: block; margin: 10px auto;">
+        <button class=" trims-btn" ng-model="inspectorRadio" btn-radio="'left'" style="width: 132px;">
+            样式
+        </button>
+        <button class=" trims-btn" ng-model="inspectorRadio" btn-radio="'right'" style="width: 132px;">
+            问题
+        </button>
+    </div>
+    <div style="display: block; width: 100%;">
+        <div class="export-btn">导出素材...</div>
+        <accordion close-others="false">
+            <accordion-group is-open="status.isPreviewOpen">
+                <accordion-heading>
+                    <div>
+                        <div ng-class="{'arrow-down': status.isPreviewOpen, 'arrow-right': !status.isPreviewOpen}"></div><div class="arrow-title">预览</div>
+                    </div>
+                </accordion-heading>
+                <div class="preview"> </div>
+            </accordion-group>
+            <accordion-group is-open="status.isShadowOpen">
+                <accordion-heading>
+                    <div>
+                        <div ng-class="{'arrow-down': status.isShadowOpen, 'arrow-right': !status.isShadowOpen}"></div><div class="arrow-title">阴影</div>
+                    </div>
+                </accordion-heading>
+                <ul>
+                    <li>位置<span class="pull-right"><strong>x </strong>{{ exporter.currentLayer.shadow.pos.x }} px <strong>y </strong>{{ exporter.currentLayer.shadow.pos.y }} px</span></li>
+                    <li>半径<span class="pull-right">{{ exporter.currentLayer.shadow.radius }} px</span></li>
+                    <li>颜色和半透明<span class="pull-right"><color-rep color="exporter.currentLayer.shadow.color"></color-rep></span></li>
+                </ul>
+            </accordion-group>
+            <accordion-group is-open="status.isColorStrokeOpen">
+                <accordion-heading>
+                    <div>
+                        <div ng-class="{'arrow-down': status.isColorStrokeOpen, 'arrow-right': !status.isColorStrokeOpen}"></div><div class="arrow-title">颜色和描边</div>
+                    </div>
+                </accordion-heading>
+                <ul>
+                    <li>颜色填充<span class="pull-right"><color-rep color="exporter.currentLayer.fill_color"></color-rep></span></li>
+                    <li>描边颜色<span class="pull-right"><color-rep color="exporter.currentLayer.stroke.color"></color-rep></span></li>
+                    <li>描边<span class="pull-right">{{ exporter.currentLayer.stroke.width }} px</span></li>
+                </ul>
+            </accordion-group>
+            <accordion-group is-open="status.isSizeFontOpen">
+                <accordion-heading>
+                    <div>
+                        <div ng-class="{'arrow-down': status.isSizeFontOpen, 'arrow-right': !status.isSizeFontOpen}"></div><div class="arrow-title">尺寸和字体</div>
+                    </div>
+                </accordion-heading>
+                <ul>
+                    <li>字体<span class="pull-right">Helvetica Neue Medium</span></li>
+                    <li>字号<span class="pull-right">24 px</span></li>
+                    <li>尺寸<span class="pull-right"><strong>x</strong> 84 px <strong>y</strong> 24 px</span></li>
+                </ul>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>

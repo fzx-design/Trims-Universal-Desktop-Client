@@ -1,0 +1,62 @@
+<div class="welcom-main">
+
+    <div class="header">
+        <div class="logo">
+            <img class="main" src="images/welcom/logo.png">
+            <img class="part" src="images/welcom/beta.png">
+        </div>
+    </div>
+
+    <div class="body-main {{isFirst?'noAnimate':''}}" ng-class="{true: 'mainOut', false: 'mainIn'}[isLogin]">
+        <div class="row">
+            <img src="images/welcom/splash_1.svg">
+            <div>
+                <p>协同设计和方案版本控制</p>
+                <p>设计师可利用 Trims 对方案文件进行协同编辑和版本同步，或是回溯至以前的版本。</p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="images/welcom/splash_2.svg">
+            <div>
+                <p>方案文件交接</p>
+                <p>完成的设计方案可以方便的推送至开发或工程团队，所有人的方案都能与设计师保持同步。</p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="images/welcom/splash_3.svg">
+            <div>
+                <p>开发图片资源生成和反馈</p>
+                <p>开发团队或美术工程团队可利用 Trims 简单快速的导出资源，无需安装设计工具。</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="body-login {{isFirst?'noAnimate':''}}" ng-class="{true: 'loginIn', false: 'loginOut'}[isLogin]">
+        <div style="width: 264px; margin: auto;">
+            <p class="title">登录</p>
+            <div trims-input-box class="trims-input-box email" type="email" value="email" required="true" placeholder="邮箱地址"></div>
+            <div trims-input-box class="trims-input-box password" type="password" value="password" required="true" placeholder="密码"></div>
+            <a class="link" href="">忘记密码</a>
+        </div>
+    </div>
+
+
+    <div class="footer-main {{isFirst?'noAnimate':''}}" ng-class="{true: 'mainOut', false: 'mainIn'}[isLogin]" ng-hide="isLogin">
+        <button ng-click="goHelp()" class="trims-btn help">?</button>
+        <div>
+            <button ng-click="goLogin()" class="trims-btn">登录</button>
+            <button ng-click="goRegister()" class="trims-btn-primary">新用户注册</button>
+        </div>
+    </div>
+    <div class="footer-login {{isFirst?'noAnimate':''}}" ng-class="{true: 'loginIn', false: 'loginOut'}[isLogin]" ng-show="isLogin">
+        <button ng-click="goHelp()" class="trims-btn help">?</button>
+        <button ng-click="goRegister()" class="trims-btn register">新用户注册</button>
+        <button ng-click="login()" class="trims-btn-primary login">登录</button>
+        <button ng-click="goBack()" class="trims-btn back">返回</button>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="74px" viewBox="0 0 100 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>splash_3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="splash_3" sketch:type="MSArtboardGroup">
+            <path d="M-8.32667268e-17,73.5 L100,73.5" id="Line" stroke="#BEBEBE" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M22.4999999,35.5 L25.75,38.75 L22.4999999,35.5 L25.75,32.25 L22.4999999,35.5 Z M22.4999999,35.5 L22.4903988,35.4903989 L22.4999999,35.5 L22.4903988,35.5096011 L22.4999999,35.5 Z" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(24.000000, 35.500000) scale(-1, 1) translate(-24.000000, -35.500000) "></path>
+            <circle id="Oval-4" fill="#FF6E6D" sketch:type="MSShapeGroup" cx="20" cy="47.5" r="10"></circle>
+            <g id="box" sketch:type="MSLayerGroup" transform="translate(1.000000, 42.000000)">
+                <g transform="translate(6.000000, 6.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-8" fill="#FFFFFF" x="2" y="2" width="22" height="22"></rect>
+                    <path d="M1.5,1.5 L24.5,1.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+                    <path d="M1.5,1.5 L1.5,24.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+                    <path d="M24.5,1.5 L24.5,24.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+                    <path d="M1.5,24.5 L24.5,24.5" id="Line" stroke="#000000" stroke-linecap="square"></path>
+                    <path d="M13,1.5 L13,24.0121083" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+                </g>
+                <path d="M30.5,7.5 L37.5710678,0.428932175" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M0.427097296,7.5 L7.5,0.42709727" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(3.963549, 3.963549) scale(-1, 1) translate(-3.963549, -3.963549) "></path>
+            </g>
+            <path d="M15.4999999,35.5 L18.75,38.75 L15.4999999,35.5 L18.75,32.25 L15.4999999,35.5 Z M15.4999999,35.5 L15.4903988,35.4903989 L15.4999999,35.5 L15.4903988,35.5096011 L15.4999999,35.5 Z" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-5" fill="#000000" sketch:type="MSShapeGroup" cx="20.5" cy="31" r="2.5"></circle>
+            <path d="M20.5,0.5 L20.5,30.5166626" id="Line" stroke="#000000" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <g id="box-2" sketch:type="MSLayerGroup" transform="translate(38.000000, 48.000000)">
+                <rect id="Rectangle-8" fill="#FFFFFF" sketch:type="MSShapeGroup" x="2" y="2" width="22" height="22"></rect>
+                <path d="M1.5,1.5 L24.5,1.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M1.5,1.5 L1.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M24.5,1.5 L24.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M1.5,24.5 L24.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M13,1.5 L13,24.0121083" id="Line" stroke="#939393" stroke-width="0.5" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-10" fill-opacity="0.6" fill="#FFB532" sketch:type="MSShapeGroup" x="9" y="2" width="8" height="5"></rect>
+            </g>
+            <g id="box-2" sketch:type="MSLayerGroup" transform="translate(69.000000, 48.000000)">
+                <rect id="Rectangle-8" fill="#FFFFFF" sketch:type="MSShapeGroup" x="2" y="2" width="22" height="22"></rect>
+                <path d="M1.5,1.5 L24.5,1.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M1.5,1.5 L1.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M24.5,1.5 L24.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M1.5,24.5 L24.5,24.5" id="Line" stroke="#939393" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M13,1.5 L13,24.0121083" id="Line" stroke="#939393" stroke-width="0.5" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-10" fill-opacity="0.6" fill="#FFB532" sketch:type="MSShapeGroup" x="9" y="2" width="8" height="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

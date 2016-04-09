@@ -1,0 +1,11 @@
+<script type="text/ng-template">
+    <accordion close-others="false" ng-repeat="layer in layer.layers" ng-include="'views/exporter/layer.html'">
+        <accordion-group is-open="isOpen">
+            <accordion-heading ng-click="isOpen = !isOpen">
+                <div>
+                    {{ layer.name }}
+                </div>
+            </accordion-heading>
+        </accordion-group>
+    </accordion>
+</script>

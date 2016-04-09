@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Iconset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon_fb" sketch:type="MSArtboardGroup">
+            <g id="Path-55-+-?" sketch:type="MSLayerGroup" transform="translate(7.000000, 7.000000)">
+                <path d="M1.64111328,11.104126 C1.64111328,11.104126 0.560791016,9.73400879 0.560791016,7.65875244 C0.560791016,5.13848877 1.81030273,0.501708984 8.57348633,0.501708984 C15.3366699,0.501708984 16.5375977,5.37963867 16.5375977,7.65875244 C16.5375977,9.93786621 15.0004883,14.6243896 8.57348633,14.6243896 C5.19970703,14.6243896 3.84130859,13.454834 3.84130859,13.454834 L0.560791016,14.2954102 L1.64111328,11.104126 Z" id="Path-55" stroke="#b1b1b1" stroke-width="1.5" sketch:type="MSShapeGroup"></path>
+                <text id="?" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="12" font-weight="420" fill="#b1b1b1">
+                    <tspan x="5" y="12">?</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

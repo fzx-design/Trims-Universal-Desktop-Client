@@ -1,0 +1,23 @@
+<script type="text/ng-template" id="recursive-layer">
+    <span ng-if="!layer.layers">{{ layer.name }}</span>
+    <accordion ng-if="layer.layers" close-others="false">
+        <accordion-group ng-repeat="layer in layer.layers" is-open="layer.open">
+            <accordion-heading>
+                <div ng-click="exporter.setCurrentLayer(layer)" ng-class="{'layer-select': exporter.isCurrentLayer(layer), 'highlight': exporter.isCurrentLayer(layer)}" stop-event>
+                    <span ng-class="{'layer-invisible': layer.invisible, 'layer-visible': !layer.invisible}" ng-click="layer.invisible = !layer.invisible" stop-event></span>
+                    <div style="display: inline-block;" ng-style="{'padding-left': level * 10 + 'px'}">{{ layer.name }}</div>
+                    <span class="pull-right" ng-class="{'arrow-down': layer.open, 'arrow-left': !layer.open}" ng-click="layer.open = !layer.open" ng-show="layer.layers" stop-event></span>
+                </div>
+            </accordion-heading>
+            <ng-include ng-init="level = level + 1" ng-if="layer.layers" src="'recursive-layer'"></ng-include>
+        </accordion-group>
+    </accordion>
+</script>
+
+<div class="layers" ng-controller="ExporterLayersCtrl">
+    <div class="layer-tools"></div>
+    <div class="root-layer">{{ exporter.psd.name }}</div>
+    <div class="layer-tree" ng-init="level = 0">
+        <ng-include ng-if="layer.layers" src="'recursive-layer'"></ng-include>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="trims-preview" ng-class="mode">
+	<div class="preview">
+		<div class="imgOut">
+			<img ng-src="{{value.snapshotUrl}}">
+			<span ng-show="value.lock" class="lock"></span>
+		</div>
+	</div><!--
+	--><div class="basicInfo">
+		<div class="fileName">
+			<div style="height: 100%;">
+				<span ng-if="type=='dynamic'" trims-circle-mark type="value.operation" isself="value.isSelf" style="display: inline-block;"></span>
+				<span class="name">{{value.name}}</span>
+			</div>
+		</div>
+		<div class="authorName">
+			<span ng-show="value.isSelf">我</span>
+			<span ng-class="type=='dynamic'?'other':''" ng-show="!value.isSelf">{{value.author}}</span>
+		</div>
+	</div><!--
+	--><div ng-show="mode=='list'" class="fileSize">
+		<p>{{value.size}}</p>
+	</div><!--
+	--><div ng-show="mode=='list'" class="lastUpdate">
+		<p class="time">{{value.updatedBy.time | amPmDateFilter}}</p>
+		<p class="name">{{value.updatedBy.name}} 最后修改</p>
+	</div>
+</div>

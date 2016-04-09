@@ -1,0 +1,375 @@
+@import "variables";
+
+.welcom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all @trans-time;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 500;
+        transition: all .5s @trans-type;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &+.application-bar {
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+        height: 25px;
+        -webkit-app-region: drag;
+        .trims-window-actions {
+            padding: 3px 0 0 6px;
+            -webkit-app-region: no-drag;
+            display: inline-block;
+        }
+    }
+}
+
+.welcom.ng-enter {
+    -webkit-animation: slideInRight .5s both @trans-type;
+    z-index: 1000;
+}
+
+.welcom.ng-leave {
+    -webkit-animation: slideOutLeftP20 @trans-time both @trans-type;
+    &::before {
+        opacity: .8;
+    }
+}
+
+// less for welcom->init
+.welcom-main {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .noAnimate {
+        -webkit-animation: none !important;
+    }
+    >div.ng-animate{
+        display: block !important;
+        &.footer-main {
+            border-top: 1px solid #eaeaea !important;
+        }
+    }
+    div.header {
+        height: 120px;
+        display: table;
+        .logo {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .main {
+            width: 120px;
+            height: 35px;
+            margin-left: 340px;
+        }
+        .part {
+            width: 18px;
+            height: 7px;
+            vertical-align: top;
+        }
+    }
+    .body-main {
+        display: block;
+        width: 100%;
+        height: 377px;
+        transition: all @trans-time @trans-type;
+        .row {
+            padding-left: 60px;
+            margin-top: 10px;
+            margin-bottom: 38px;
+            width: 100%;
+            img {
+                width: 100px;
+                height: 74px;
+            }
+            > div {
+                display: inline-block;
+                width: 537px;
+                height: 45px;
+                vertical-align: middle;
+                margin-left: 40px;
+                margin-top: -5px;
+                > p {
+                    font-size: 18px;
+                    margin: 0;
+                    +p {
+                        color: #7d7d7d;
+                        font-size: 12px;
+                        margin: 4px 0 0 0;
+                    }
+                }
+            }
+        }
+
+        // animation
+        &.mainOut {
+            -webkit-animation: slideOutUp @trans-time both @trans-type;
+            opacity: 0;
+        }
+        &.mainIn {
+            -webkit-animation: slideInDown @trans-time both @trans-type;
+            opacity: 1;
+        }
+    }
+    .body-login {
+        &.loginIn {
+            -webkit-animation: slideInUp @trans-time both @trans-type;
+        }
+        &.loginOut {
+            -webkit-animation: slideOutDown @trans-time both @trans-type;
+            display: none;
+        }
+        width: 100%;
+        height: 377px;
+        background: #eaeaea;
+        border-top: 1px solid #d5d5d5;
+        .title {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 46px;
+            margin-bottom: 43px;
+        }
+        .email {
+            width: 100%;
+            height: 40px;
+            input {
+                padding-left: 13px;
+                font-size: 14px;
+            }
+        }
+        .password {
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            input {
+                padding-left: 13px;
+                font-size: 14px;
+            }
+        }
+        .link {
+            font-size: 12px;
+            color: #27b3fc;
+        }
+    }
+    .footer-main {
+        transition: all @trans-time @trans-type;
+        height: 70px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        border-top: 1px solid #d5d5d5;
+        background: #eaeaea;
+        line-height: 70px;
+        box-sizing: content-box;
+        z-index: 200;
+        .help {
+            line-height: 32px;
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            color: #fd5eff;
+            padding: 0;
+            margin-left: 22px;
+            margin-right: 18px;
+            vertical-align: middle;
+            &::before {
+                border-radius: 16px;
+            }
+            &::after {
+                border-radius: 16px;
+            }
+        }
+        > div {
+            display: inline-block;
+            position: absolute;
+            width: 260px;
+            left: e("calc(50% - 130px)");
+            top: e("calc(50% - 20px)");
+            line-height: 0;
+            .trims-btn {
+                font-size: 14px;
+                width: 120px;
+                height: 40px;
+                margin-right: 20px;
+                float: left;
+            }
+            .trims-btn-primary {
+                font-size: 14px;
+                width: 120px;
+                height: 40px;
+                float: left;
+            }
+        }
+        &.mainIn {
+
+        }
+        &.mainOut {
+            border-top: none;
+            opacity: 0;
+        }
+    }
+
+    .footer-login {
+        &.loginIn {
+        }
+        &.loginOut {
+            opacity: 0;
+        }
+        height: 70px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        line-height: 70px;
+        box-sizing: content-box;
+        background: #eaeaea;
+        z-index: 100;
+        transition: all @trans-time @trans-type;
+        border-top: 1px solid #eaeaea;
+        .help {
+            line-height: 0;
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            color: #fd5eff;
+            padding: 0;
+            margin-left: 22px;
+            margin-right: 18px;
+            vertical-align: middle;
+            &::before {
+                border-radius: 16px;
+            }
+            &::after {
+                border-radius: 16px;
+            }
+        }
+        .register {
+            line-height: 0;
+            width: 90px;
+            vertical-align: middle;
+        }
+        .back {
+            line-height: 0;
+            font-size: 14px;
+            width: 80px;
+            height: 40px;
+            float: right;
+            margin-right: 17px;
+            margin-top: 15px;
+        }
+        .login {
+            line-height: 0;
+            font-size: 14px;
+            width: 80px;
+            height: 40px;
+            float: right;
+            margin-right: 17px;
+            margin-top: 15px;
+        }
+    }
+}
+
+// less for welcom->init
+.welcom-init {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .body {
+        width: 100%;
+        height: 100%;
+        .title {
+            margin-top: 46px;
+            > p {
+                margin-top: 49px;
+                text-align: center;
+                font-size: 24px;
+                + p {
+                    color: #7d7d7d;
+                    width: 650px;
+                    text-align: center;
+                    margin: auto;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .content {
+            div {
+                width: 50%;
+                float: left;
+                text-align: center;
+                height: 280px;
+                padding-top: 34px;
+                margin-top: 48px;
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+                p {
+                    font-size: 18px;
+                    color: #27b3fc;
+                    margin: 18px;
+                    +p {
+                        color: #7d7d7d;
+                        font-size: 12px;
+                    }
+                }
+            }
+            div:not(:first-child) {
+                border-left: 1px solid #e5e5e5;
+            }
+        }
+    }
+    .footer {
+        height: 70px;
+        line-height: 70px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background: #eaeaea;
+        border-top: 1px solid #e5e5e5;
+        box-sizing: content-box;
+        z-index: 100;
+        .help {
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 16px;
+            color: #fd5eff;
+            padding: 0;
+            margin-left: 22px;
+            margin-right: 18px;
+            vertical-align: middle;
+            &::before {
+                border-radius: 16px;
+            }
+            &::after {
+                border-radius: 16px;
+            }
+        }
+        .register {
+            line-height: 0;
+            width: 60px;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+.welcome-register {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}

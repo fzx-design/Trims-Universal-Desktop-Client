@@ -1,0 +1,1063 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"import",
+				"important"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"a",
+				"attrs"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"local",
+				"localChanges"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"change",
+				"changeCurrentProject"
+			],
+			[
+				"curr",
+				"currentProjectId"
+			],
+			[
+				"H",
+				"height"
+			],
+			[
+				"proje",
+				"projectList"
+			],
+			[
+				"sele",
+				"selectedFeedback"
+			],
+			[
+				"border-bo",
+				"border-bottom-left-radius"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backgroud",
+				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"ng-s",
+				"ng-show	AngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/template/sync-dialog.html",
+			"settings":
+			{
+				"buffer_size": 2533,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/trims.less",
+			"settings":
+			{
+				"buffer_size": 34827,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/dialogs.less",
+			"settings":
+			{
+				"buffer_size": 3709,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/nodejs.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/nodejs.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 216.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alex/Dev/workspace/sixmins",
+		"/Users/alex/Dev/workspace/sixmins/app",
+		"/Users/alex/Dev/workspace/sixmins/app/api_simulation",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/filters",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/services",
+		"/Users/alex/Dev/workspace/sixmins/app/styles",
+		"/Users/alex/Dev/workspace/sixmins/app/template",
+		"/Users/alex/Dev/workspace/sixmins/app/views",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main",
+		"/Users/alex/Dev/workspace/sixmins/app/views/welcome",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/angular-bootstrap",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/angular-dialog-service",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/angular-dialog-service/dist",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/bootstrap",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/bootstrap/dist",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/bootstrap/dist/css"
+	],
+	"file_history":
+	[
+		"/Users/alex/Dev/workspace/sixmins/app/index.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/titlebar.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/global.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-window-actions.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/sync-dialog.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/standard.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/titlebar.html",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/main.less",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/dialogs.less",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/animation.less",
+		"/Users/alex/Dev/workspace/sixmins/app/views/welcome/main.html",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/welcom.less",
+		"/Users/alex/Dev/workspace/sixmins/app/views/welcome/welcom.html",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/trims.less",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/filters/conflict-reason-filter.js",
+		"/Users/alex/Dev/workspace/sixmins/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-search-box.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/sync.js",
+		"/Users/alex/Dev/workspace/sixmins/bower.json",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-commit-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-commit-preview.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-input-box.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-history-preview.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-history-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-conflict-preview.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-conflict-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-circle-mark.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-circle-mark.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-inspector-feedback.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-preview.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/main.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-select.js",
+		"/Users/alex/Dev/workspace/sixmins/app/images/icon/lock.svg",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-inspector-log-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/projects.html",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-inspector-history.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/viewer.html",
+		"/Users/alex/Dev/workspace/sixmins/app/images/icon/icon_sidebar.svg",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/app.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/SyncProjectController.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/boot.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/welcom.js",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/alex/Dev/workspace/sixmins/app/styles/variables.less",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/inspector.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/library.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/controllers/standard.js",
+		"/Users/alex/Dev/workspace/sixmins/app/views/main/main.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/init/main.html",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/filters/file-path.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-inspector-log-preview.js",
+		"/Users/alex/Dev/workspace/sixmins/app/scripts/directives/trims-inspector-history.js",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-log-preview.html",
+		"/Users/alex/Dev/workspace/sixmins/app/views/exporter/inspector.html",
+		"/Users/alex/Dev/workspace/sixmins/app/template/trims-user-history.html",
+		"/Users/alex/Dev/workspace/sixmins/app/boot.js",
+		"/D/Alex/Dev/workspace/idea/cdiserver2/build.gradle",
+		"/D/Alex/Dev/workspace/idea/HuaweiCards/cards.iml",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/User/nodeWebKit.sublime-build",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/package.json",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/trims.sublime-project",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/index.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-window-actions.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/controllers/welcom.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/controllers/global.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-toggle.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/welcome/main.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/styles/main.less",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/welcome/login.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/styles/welcom.less",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/controllers/main.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/template/trims-preview.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-radio.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/main/viewer.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-preview.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-scroll.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/bower_components/angular/angular.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-select.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/main/library.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/template/trims-window-actions.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/welcome/welcom.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/main/main.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/main/titlebar.html",
+		"/D/Program Files/Shadowsocks/gui-config.json",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/styles/animation.less",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-circle-mark.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/template/trims-circle-mark.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/template/trims-log-preview.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-log-preview.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/template/trims-user-history.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/images/icon/tri_arrow.svg",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/app.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/boot.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/boot.html",
+		"/D/Alex/Dev/workspace/brackets/trims-design/SVG icons/menu_arrow.svg",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/services/global.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/welcom.html",
+		"/D/Alex/Dev/workspace/idea/cdiserver2/src/main/webapp/scripts/app.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/boot.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/controllers/about.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/config.json",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/styles/trims.less",
+		"/D/Alex/桌面/sixmins.bat",
+		"/D/Alex/Dev/softwares/nwjs-v0.12.2/nw.exe",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/main/inspector.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/bower_components/bootstrap/package.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/bower_components/angular-bootstrap/ui-bootstrap.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/views/standard.html",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-history-preview.js",
+		"/D/Alex/Dev/workspace/brackets/nodejslearn/JavascriptBasic/makeClosures.js",
+		"/D/Alex/Dev/workspace/brackets/nodejslearn/JavascriptBasic/partial.js",
+		"/D/Alex/Dev/workspace/brackets/nodejslearn/JavascriptBasic/sublime.html",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/NodejsDebug-master/README.md",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/Nodejs Debug/nodejs_debug.sublime-settings",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/yanha/AppData/Roaming/Sublime Text 3/Packages/User/nodejs.sublime-build",
+		"/D/Alex/桌面/CdiPusher.php",
+		"/D/Alex/项目/华为定位/使用说明.md",
+		"/D/Alex/桌面/cards.sql",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/styles/variables.less",
+		"/D/Alex/Dev/workspace/brackets/nodejslearn/lesson3/app.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/scripts/directives/trims-input-box.js",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/images/icon/view_list_active.svg",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/images/icon/view_list.svg",
+		"/D/Alex/Dev/workspace/brackets/sixmins-client/app/images/icon/view_grid_active.svg"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"disabled",
+			"search-box",
+			"disabled",
+			"modal",
+			"fade",
+			"dialog",
+			"sub",
+			"trims-commit-preview",
+			"trims-hist",
+			"after",
+			"check",
+			"drag",
+			"focus",
+			"fo",
+			"trans-type",
+			"@trans-type",
+			"transition",
+			"trims-btn-sub",
+			"trims-sw",
+			"scope.$appl",
+			"setModel",
+			"currentProject",
+			"border-radius: 1px;",
+			"conlick",
+			"click",
+			"ng-click",
+			"ngClick",
+			"preview",
+			"png",
+			"getProjectById",
+			"_state",
+			"animation",
+			"button",
+			"login",
+			"true",
+			"=\"\">\n",
+			"/td>\n            </tr>\n            <tr>\n                <",
+			"function",
+			"  \n",
+			"thansk",
+			"name",
+			"dffds",
+			">",
+			"ul",
+			"</",
+			"console",
+			"}\n",
+			"name",
+			"greeting",
+			"name",
+			"\n}",
+			"str1",
+			", ",
+			"str3",
+			");\n",
+			"str2",
+			"str1",
+			"greeting",
+			"3",
+			"box-shadow",
+			"transition",
+			"trims-design-history-preview-",
+			"trims-btn-default-border",
+			"trims-thin-border",
+			"菜单",
+			"list",
+			"trims-btn-sub",
+			"切换",
+			"trims-fold-list",
+			"location",
+			"center",
+			"top",
+			"width",
+			"first",
+			"trims-user-his",
+			"template"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"f3f3f3"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/template/sync-dialog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "app/styles/trims.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15676,
+								15677
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/dialogs.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1581.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.538028169014,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 314.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/nodeWebKit.sublime-build",
+	"project": "trims.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"global",
+				"app/scripts/controllers/global.js"
+			],
+			[
+				"window",
+				"app/scripts/directives/trims-window-actions.js"
+			],
+			[
+				"titleb",
+				"app/scripts/controllers/titlebar.js"
+			],
+			[
+				"title.hm",
+				"app/views/main/titlebar.html"
+			],
+			[
+				"stand",
+				"app/views/standard.html"
+			],
+			[
+				"trims.l",
+				"app/styles/trims.less"
+			],
+			[
+				"main",
+				"app/styles/main.less"
+			],
+			[
+				"welcom",
+				"app/styles/welcom.less"
+			],
+			[
+				"ani",
+				"app/styles/animation.less"
+			],
+			[
+				"dialog.html",
+				"app/template/sync-dialog.html"
+			],
+			[
+				"sta",
+				"app/views/standard.html"
+			],
+			[
+				"s",
+				"app/views/standard.html"
+			],
+			[
+				"trims-search",
+				"app/scripts/directives/trims-search-box.js"
+			],
+			[
+				"standar",
+				"app/views/standard.html"
+			],
+			[
+				"trims",
+				"app/styles/trims.less"
+			],
+			[
+				"titlebar",
+				"app/scripts/controllers/titlebar.js"
+			],
+			[
+				"main.l",
+				"app/styles/main.less"
+			],
+			[
+				"title",
+				"app/scripts/controllers/titlebar.js"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"wel",
+				"app/styles/welcom.less"
+			],
+			[
+				"input",
+				"app/scripts/directives/trims-input-box.js"
+			],
+			[
+				"trims-comm",
+				"app/scripts/directives/trims-commit-preview.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"stan",
+				"app/views/standard.html"
+			],
+			[
+				"standard",
+				"app/views/standard.html"
+			],
+			[
+				"conflic",
+				"app/scripts/filters/conflict-reason-filter.js"
+			],
+			[
+				"trimscircle",
+				"app/scripts/directives/trims-circle-mark.js"
+			],
+			[
+				"trimscir",
+				"app/template/trims-circle-mark.html"
+			],
+			[
+				"ind",
+				"app/index.html"
+			],
+			[
+				"inspect",
+				"app/template/trims-inspector-feedback.html"
+			],
+			[
+				"trims-his",
+				"app/template/trims-history-preview.html"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"trims-pr",
+				"app/scripts/directives/trims-preview.js"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"trims-pre",
+				"app/scripts/directives/trims-preview.js"
+			],
+			[
+				"trims-hi",
+				"app/scripts/directives/trims-history-preview.js"
+			],
+			[
+				"trimsselect",
+				"app/scripts/directives/trims-select.js"
+			],
+			[
+				"welo",
+				"app/styles/welcom.less"
+			],
+			[
+				"trims.le",
+				"app/styles/trims.less"
+			],
+			[
+				"trims-log",
+				"app/template/trims-inspector-log-preview.html"
+			],
+			[
+				"trims-previ",
+				"app/scripts/directives/trims-preview.js"
+			],
+			[
+				"view",
+				"app/views/main/viewer.html"
+			],
+			[
+				"side",
+				"app/images/icon/icon_sidebar.svg"
+			],
+			[
+				"sync",
+				"app/scripts/controllers/sync.js"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"titleba",
+				"app/views/main/titlebar.html"
+			],
+			[
+				"welcom.js",
+				"app/scripts/controllers/welcom.js"
+			],
+			[
+				"globa",
+				"app/scripts/controllers/global.js"
+			],
+			[
+				"mainl.",
+				"app/styles/main.less"
+			],
+			[
+				"title.js",
+				"app/scripts/controllers/titlebar.js"
+			],
+			[
+				"viewer",
+				"app/views/main/viewer.html"
+			],
+			[
+				"welco",
+				"app/styles/welcom.less"
+			],
+			[
+				"vari",
+				"app/styles/variables.less"
+			],
+			[
+				"library",
+				"app/views/main/library.html"
+			],
+			[
+				"inspector",
+				"app/views/main/inspector.html"
+			],
+			[
+				"titlebarjs",
+				"app/scripts/controllers/titlebar.js"
+			],
+			[
+				"trims-sele",
+				"app/scripts/directives/trims-select.js"
+			],
+			[
+				"standardjs",
+				"app/scripts/controllers/standard.js"
+			],
+			[
+				"trims-select",
+				"app/scripts/directives/trims-select.js"
+			],
+			[
+				"trims-inspec",
+				"app/template/trims-inspector-feedback.html"
+			],
+			[
+				"trims-inse",
+				"app/template/trims-inspector-log-preview.html"
+			],
+			[
+				"inspec",
+				"app/views/main/inspector.html"
+			],
+			[
+				"main.le",
+				"app/styles/main.less"
+			],
+			[
+				"logpre",
+				"app/template/trims-log-preview.html"
+			],
+			[
+				"user",
+				"app/template/trims-user-history.html"
+			],
+			[
+				"circlemak",
+				"app/scripts/directives/trims-circle-mark.js"
+			],
+			[
+				"circle",
+				"app/template/trims-circle-mark.html"
+			],
+			[
+				"trims-to",
+				"app\\scripts\\directives\\trims-toggle.js"
+			],
+			[
+				"we",
+				"app\\styles\\welcom.less"
+			],
+			[
+				"login",
+				"app\\views\\welcome\\login.html"
+			],
+			[
+				"trims-ra",
+				"app\\scripts\\directives\\trims-radio.js"
+			],
+			[
+				"trims-rad",
+				"app\\scripts\\directives\\trims-radio.js"
+			],
+			[
+				"angul",
+				"bower_components\\angular\\angular.js"
+			],
+			[
+				"titlebar.ht",
+				"app\\views\\main\\titlebar.html"
+			],
+			[
+				"main.html",
+				"app\\views\\main\\main.html"
+			],
+			[
+				"welcom.h",
+				"app\\views\\welcome\\welcom.html"
+			],
+			[
+				"preview",
+				"app\\template\\trims-preview.html"
+			],
+			[
+				"trims-widn",
+				"app\\scripts\\directives\\trims-window-actions.js"
+			],
+			[
+				"trims-prev",
+				"app\\template\\trims-preview.html"
+			],
+			[
+				"pre",
+				"app\\template\\trims-preview.html"
+			],
+			[
+				"userhis",
+				"app\\template\\trims-user-history.html"
+			],
+			[
+				"log-pre",
+				"app\\template\\trims-log-preview.html"
+			],
+			[
+				"trims-cir",
+				"app\\scripts\\directives\\trims-circle-mark.js"
+			],
+			[
+				"circlemark",
+				"app\\template\\trims-circle-mark.html"
+			],
+			[
+				"about.js",
+				"app\\scripts\\controllers\\about.js"
+			],
+			[
+				"app.js",
+				"app\\scripts\\app.js"
+			],
+			[
+				"trims.less",
+				"app\\styles\\trims.less"
+			],
+			[
+				"main.less",
+				"app\\styles\\main.less"
+			],
+			[
+				"title.html",
+				"app\\views\\main\\titlebar.html"
+			],
+			[
+				"global.js",
+				"app\\scripts\\controllers\\global.js"
+			],
+			[
+				"trims-r",
+				"app\\scripts\\directives\\trims-radio.js"
+			],
+			[
+				"mian.l",
+				"app\\styles\\main.less"
+			],
+			[
+				"trims.les",
+				"app\\styles\\trims.less"
+			],
+			[
+				"design",
+				"app\\template\\design-preview-template.html"
+			],
+			[
+				"",
+				"app\\views\\main\\viewer.html"
+			],
+			[
+				"trims-us",
+				"app\\template\\trims-user-history.html"
+			],
+			[
+				"inspe",
+				"app\\views\\exporter\\inspector.html"
+			],
+			[
+				"trims-user",
+				"app\\scripts\\directives\\trims-user-history.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 382.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

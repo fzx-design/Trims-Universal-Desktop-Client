@@ -1,0 +1,66 @@
+<div class="sync-project-dialog">
+
+	<div class="title">
+		<p class="text">{{title[status]}}</p>
+        <button class="trims-btn cancel" ng-click="cancel()" ng-hide="status==1">取消</button>
+        <button class="trims-btn-primary next" ng-click="next()">{{nextTitle[status]}}</button>
+	</div>
+
+	<div class="content-out">
+			
+		<div class="content content-0" ng-class="{true: '', false: 'moveOut'}[status==0]">
+			<div class="log" ng-repeat="log in remoteUpdateLogs">
+				<div class="info">
+			        <div class="user">
+			            <img ng-src="{{log.user.avatar}}" />
+			            <p class="name">{{log.user.name}}</p>
+			            <p class="time">{{log.time | date:"yyyy-M-d h:mm"}}</p>
+			        </div>
+				</div>
+				<div class="files">
+					<div trims-history-preview ng-repeat="file in log.files" value="file"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content content-1" ng-class="{true: 'moveIn', false: 'moveOut'}[status==1]" style="{{status<1?'display: none':'display: block'}}">
+			<div class="header">
+				<p class="cloud">云端的更新</p>
+				<p class="local">我的更新</p>
+				<p class="solution">解决方案</p>
+			</div>
+			<div class="record" ng-repeat="record in conflicts">
+				<div trims-conflict-preview value="record.remote" location="remote" reason="{{record.reason}}"></div>
+				<div trims-conflict-preview value="record.local" location="local" reason="{{record.reason}}"></div>
+				<div class="solution">
+					<div class="select">
+						<input type="radio" class="trims-radiobox" value="keep_both" ng-model="record.solution">
+						<span>保留两个</span>
+					</div>
+					<div class="select">
+	                	<input type="radio" class="trims-radiobox" value="keep_local" ng-model="record.solution" ng-disabled="record.reason=='lock'">
+	                	<span>保留我的更新</span>
+					</div>
+					<div class="select">
+	                	<input type="radio" class="trims-radiobox" value="keep_remote" ng-model="record.solution">
+	                	<span>保留云端的更新</span>
+					</div>
+	                
+				</div>
+			</div>
+		</div>
+
+		<div class="content content-2" ng-class="{true: 'moveIn', false: 'moveOut'}[status==2]" style="{{status<2?'display: none':'display: block'}}">
+			<div class="scrollContent">
+				<div trims-commit-preview ng-repeat="change in localChanges" value="change"></div>
+			</div>
+			<div class="action">
+	            <button class="trims-btn-sub" ng-click="selectAll()">全选</button>
+	            <button class="trims-btn-sub" ng-click="selectReverse()">反选</button>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>

@@ -1,0 +1,18 @@
+<div class="trims-conflict-preview">
+	<div class="name">
+		<span trims-circle-mark type="value.operation" isself="value.isSelf"></span>
+		<span class="text">{{value.name}}</span>
+	</div>
+	<div class="preview">
+		<div class="imgOut">
+			<img ng-src="{{value.snapshotUrl}}">
+			<span ng-show="value.lock" class="lock"></span>
+		</div>
+	</div>
+	<div class="info">
+		<p class="time">{{value.time | date:"yyyy-M-d h:mm"}} 更新</p>
+		<p class="msg">{{value.msg}}</p>
+		<p class="author" ng-if="!value.isSelf">来自 {{value.user.name}}</p>
+		<p class="error">{{reason | conflictReasonFilter:location}}</p>
+	</div>
+</div>

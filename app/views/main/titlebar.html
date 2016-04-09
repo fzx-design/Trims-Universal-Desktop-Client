@@ -1,0 +1,38 @@
+<div class="main-titlebar trims-menu-bar" ng-controller="TitleBarCtrl">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+
+                    <div class="trims-window-actions" close="true" minimize="true" fullscreen="true"></div>
+                    <button class="trims-btn-menu icon_new_toggle"  ng-disabled="unfocus"/>
+                    <button trims-toggle ng-model="projects.showSideView" class="trims-btn-menu icon_sidebar"  ng-disabled="unfocus"/>
+
+                    <div trimsSelect class="trims-select projList" ng-model="currentProjectId" ng-change="changeCurrentProject()" ng-class="{true: 'transparent'}[projects.showSideView]">
+                        <button ng-disabled="unfocus" trimsSelectToggle class="trims-select-toggle"></button>
+                        <ul>
+                            <li trimsSelectItem class="trimsSelectItem" ng-repeat="project in projects.list" item-value='project.id' item-text='project.name'>{{project.name}}</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="center">
+                    <button class="trims-btn status" ng-click="sync()" ng-disabled="unfocus">
+                        <div ng-show="updateInfo.needUpdate">
+                            <span class="trims-indicator-number">{{updateInfo.updateNumber}}</span>
+                            <span class="trims-indicator-label">更新</span>
+                            <span class="trims-indicator-separator"></span>
+                        </div>
+                        <div>
+                            <span class="trims-label lastSync" style="color: #7d7d7d;">最近同步</span>&nbsp;
+                            <span class="trims-label">{{updateInfo.lastSyncDate | titleDateFilter}}</span>
+                        </div>
+                    </button>
+                </td>
+                <td>
+                    <button class="trims-btn-menu icon_noti"  ng-disabled="unfocus"/>
+                    <div trims-search-box class="trims-search-box" value="searchValue" ng-disabled="unfocus"placeholder="搜索" loading="isLoadingSearch" ></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

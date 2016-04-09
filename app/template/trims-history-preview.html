@@ -1,0 +1,17 @@
+<div class="trims-history-preview">
+	<div class="preview">
+		<div class="imgOut">
+			<img ng-src="{{value.snapshotUrl}}">
+			<span ng-show="value.lock" class="lock"></span>
+		</div>
+	</div>
+	<div class="fileInfo">
+		<div class="name">
+			<span trims-circle-mark type="value.operation" isself="'false'"></span>
+			<span class="text">{{value.name}}</span>
+		</div>
+		<div class="msg">
+    		<span>{{value.msg}}</span>
+		</div>
+	</div>
+</div>

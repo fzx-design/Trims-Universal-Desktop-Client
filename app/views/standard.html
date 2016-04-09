@@ -1,0 +1,311 @@
+<div style="background: #ebebeb; width: 100%; height: 100%; padding: 35px 0 0 40px;">
+
+    <img src="images/welcom/logo.png" style="width: 120px; height: 35px;">
+    <div>
+        <p class="trims-label" style="margin-top: 10px;">Mac 版标准控件</p>
+    </div>
+
+    <div>
+<!------------------------    常规按钮    ------------------------>
+        <p class="trims-label-primary">常规按钮</p>
+        <table class="trims-test-table">
+            <tr>
+                <th>一般</th>
+                <th>不可用 失焦</th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="trims-btn" style="width: 64px;">取消</button>
+                </td>
+                <td>
+                    <button class="trims-btn" disabled="true" style="width: 64px;">取消</button>
+                </td>
+            </tr>
+        </table>
+
+
+<!------------------------    常规按钮（重要）    ------------------------>
+        <p class="trims-label-primary">常规按钮（重要）</p>
+        <table class="trims-test-table">
+            <tr>
+                <th>一般</th>
+                <th>不可用 失焦</th>
+                <th>载入中</th>
+                <th>切换状态：{{isEnabled}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="trims-btn-primary" style="width: 84px;">下一步</button>
+                </td>
+                <td>
+                    <button class="trims-btn-primary" disabled="true" style="width: 84px;">下一步</button>
+                </td>
+                <td>
+                    <button class="trims-btn-primary" disabled="true" style="width: 84px;">
+                        <img src="images/icon/loading_circle.svg" width="18px" />
+                    </button>
+                </td>
+                <td>
+                    <button trims-toggle class="trims-btn-primary" ng-model="isEnabled" style="width: 84px;">{{isEnabled?"禁用":"启用"}}</button>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    次要按钮    ------------------------>
+        <p class="trims-label-primary">次要按钮</p>
+        <table class="trims-test-table">
+            <tr>
+                <th>一般</th>
+                <th>不可用 失焦</th>
+                <th>合并</th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="trims-btn-sub" style="width: 110px;">恢复到此版本</button>
+                </td>
+                <td>
+                    <button class="trims-btn-sub" disabled="true" style="width: 110px;">恢复到此版本</button>
+                </td>
+                <td>
+                    <div class="trims-btn-group">
+                        <button class="trims-btn-sub" style="width: 55px;">
+                            <img src="images/icon/zoom_in.png" style="width: 13px; height: 13px;" alt="">
+                            <div class="hbar"></div>
+                             <!-- 手动添加分割线，伪类以用光，不得已出此下策，后面通过写成控件解决 -->
+                        </button>
+                        <button class="trims-btn-sub" style="width: 55px;">
+                            <img src="images/icon/zoom_out.png" style="width: 13px; height: 13px;" alt="">
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    选单    ------------------------>
+        <p class="trims-label-primary">选单</p>
+        <table class="trims-test-table">
+            <tr>
+                <th>一般</th>
+                <th>不可用 失焦</th>
+            </tr>
+            <tr>
+                <td>
+                    <div trimsSelect class="trims-select" ng-model="currentProjectId" ng-change="changeCurrentProject()">
+                        <button trimsSelectToggle class="trims-select-toggle" style="width: 170px;">
+                        </button>
+                        <ul>
+                            <li trimsSelectItem class="trimsSelectItem" ng-repeat="project in projectList" item-value='project.id' item-text='project.name'>{{project.name}}</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div trimsSelect class="trims-select" ng-model="currentProjectId" ng-change="changeCurrentProject()">
+                        <button disabled="true" trimsSelectToggle class="trims-select-toggle" style="width: 170px;">
+                            {{currentProject.name}}
+                        </button>
+                        <ul>
+                            <li trimsSelectItem class="trimsSelectItem" ng-repeat="project in projectList" item-value='project.id' item-text='project.name'>{{project.name}}</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    搜索框    ------------------------>
+        <p class="trims-label-primary">搜索框 value=[{{searchValue}}]&nbsp;|&nbsp; 加载中
+            <input type="checkbox" class="trims-checkbox" ng-model="isLoadingSearch" style="  vertical-align: middle;">
+        </p>
+        <table class="trims-test-table">
+            <tr>
+                <th>菜单栏</th>
+                <th>一般 选择</th>
+                <th>不可用 失焦</th>
+            </tr>
+            <tr>
+                <td class="trims-menu-bar">
+                    <div trims-search-box class="trims-search-box" value="searchValue" placeholder="搜索" loading="isLoadingSearch"></div>
+                </td>
+                <td>
+                    <div trims-search-box class="trims-search-box" value="searchValue" placeholder="搜索" loading="isLoadingSearch"></div>
+                </td>
+                <td>
+                    <div trims-search-box class="trims-search-box" value="searchValue" disabled="true" placeholder="搜索"></div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    菜单按钮    ------------------------>
+        <p class="trims-label-primary">菜单按钮: 如果要添加新图片按钮，需要在trims.css中照例添加</p>
+        <table class="trims-test-table">
+            <tr>
+                <th>一般</th>
+                <th>不可用 失焦</th>
+                <th>选择</th>
+                <th>切换</th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="trims-btn-menu icon_noti" />
+                </td>
+                <td>
+                    <button class="trims-btn-menu icon_noti" disabled="true" />
+                </td>
+                <td>
+                    <button trims-toggle ng-model="isEnabled" class="trims-btn-menu icon_sidebar" />
+                </td>
+                <td>
+                    <button ng-model="radioModel"  trims-radio="'left'"  class="trims-btn-menu icon_sidebar" />
+                    <button ng-model="radioModel"  trims-radio="'middle'"  class="trims-btn-menu icon_sidebar" />
+                    <button ng-model="radioModel"  trims-radio="'right'"  class="trims-btn-menu icon_sidebar" />
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    进度条    ------------------------>
+        <p class="trims-label-primary">进度条&nbsp;|&nbsp;进度
+            <span trims-input-box class="trims-input-box" type="text" value="progress" style="width: 40px; height: 20px;"></span>%</p>
+        <table class="trims-test-table">
+            <tr>
+                <td>
+                    <div trims-progress-bar style="width: 150px;" percent="progress" mode="dynamic"></div>
+                </td>
+                <td>
+                    <div trims-progress-bar style="width: 150px;" mode="static"></div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    切换按钮    ------------------------>
+        <p class="trims-label-primary" style="
+            position: absolute;
+            top: 110px;
+            left: 500px;
+        ">切换按钮</p>
+        <table class="trims-test-table" style="
+            position: absolute;
+            top: 136px;
+            left: 500px;
+        ">
+            <tr>
+                <th>按下时</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="trims-switch-group">
+                        <button class="trims-btn" ng-model="radioModel" btn-radio="'left'" style="width: 100px;">
+                            文件历程
+                        </button>
+                        <button class="trims-btn" ng-model="radioModel" btn-radio="'middle'" style="width: 100px;">
+                            我的版本
+                        </button>
+                        <button class="trims-btn" ng-model="radioModel" btn-radio="'right'" style="width: 100px;">
+                            第三个
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>不可用 失焦</th>
+            </tr>
+            <tr>
+                <td>
+                    <div disabled="true" class="btn-group trims-switch-group">
+                        <button disabled="true" class="btn trims-btn" ng-model="radioModel" btn-radio="'left'" style="width: 100px;">
+                            文件历程
+                        </button>
+                        <button disabled="true" class="btn trims-btn" ng-model="radioModel" btn-radio="'middle'" style="width: 100px;">
+                            我的版本
+                        </button>
+                        <button disabled="true" class="btn trims-btn" ng-model="radioModel" btn-radio="'right'" style="width: 100px;">
+                            第三个
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    Radio Box    ------------------------>
+        <table class="trims-test-table" style="
+            position: absolute;
+            top: 260px;
+            left: 500px;
+        ">
+            <tr>
+                <td>
+                    <input type="radio" class="trims-radiobox" value="已选择" ng-model="radio_selected"><span>已选择</span>
+                </td>
+                <td>
+                    <input type="radio" class="trims-radiobox" value="不可用" ng-model="radio_selected" disabled="true"><span>已选择</span>
+                </td>
+                <td>
+                    <input type="radio" class="trims-radiobox" value="可选择" ng-model="radio_selected"><span>已选择</span>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    Check Box    ------------------------>
+        <table class="trims-test-table" style="
+            position: absolute;
+            top: 290px;
+            left: 500px;
+        ">
+            <tr>
+                <td>
+                    <input type="checkbox" class="trims-checkbox" ng-model="checkbox_checked">
+                </td>
+                <td>
+                    <input type="checkbox" class="trims-checkbox" disabled="true">
+                </td>
+                <td>
+                    <input type="checkbox" class="trims-checkbox">
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    折叠列表     ------------------------>
+        <p class="trims-label-primary" style="
+            position: absolute;
+            top: 330px;
+            left: 500px;
+        ">折叠列表</p>
+        <table class="trims-test-table" style="
+            position: absolute;
+            top: 355px;
+            left: 500px;
+        ">
+            <tr>
+                <td>
+                    <div class="trims-log-preview" value="file" style="width: 260px;"></div>
+                </td>
+            </tr>
+        </table>
+
+<!------------------------    输入框    ------------------------>
+        <p class="trims-label-primary" style="
+            position: absolute;
+            top: 460px;
+            left: 500px;
+        ">输入框&nbsp;|&nbsp;value=[{{emailbox}}]</p>
+        <table class="trims-test-table" style="
+            position: absolute;
+            top: 500px;
+            left: 500px;
+        ">
+            <tr>
+                <th>一般 <b>输入错误有惊喜</b>
+                </th>
+                <th>不可用 失焦</th>
+            </tr>
+            <tr>
+                <td>
+                    <div trims-input-box class="trims-input-box" type="email" value="emailbox" required="true" disabled="false" placeholder="Email"></div>
+                </td>
+                <td>
+                    <div trims-input-box class="trims-input-box" type="email" value="emailbox" required="true" disabled="true" placeholder="Email"></div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+</div>

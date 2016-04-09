@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="74px" viewBox="0 0 100 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>splash_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="splash_1" sketch:type="MSArtboardGroup">
+            <path d="M-8.32667268e-17,73.5 L100,73.5" id="Line" stroke="#BEBEBE" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <rect id="box" fill="#939393" sketch:type="MSShapeGroup" x="19" y="53" width="44" height="20"></rect>
+            <g id="Line-+-Line" sketch:type="MSLayerGroup" transform="translate(20.500000, 17.500000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.25,8.75 L8.50378704,0.496212989" id="Line" sketch:type="MSShapeGroup"></path>
+                <path d="M11.25,9.25 L19.2539053,1.2460947" id="Line" sketch:type="MSShapeGroup" transform="translate(15.500000, 5.000000) scale(1, -1) translate(-15.500000, -5.000000) "></path>
+            </g>
+            <rect id="box-2" fill="#939393" sketch:type="MSShapeGroup" x="19" y="26" width="22" height="20"></rect>
+            <path d="M30.5,0 L30.5,12.465332 C31.6562456,12.5079234 33.4321117,13.5117188 33.4326172,15.2746582 C33.4331226,17.0375977 32.2299805,17.9605236 30.5,18.0061035 C28.7700195,18.0516834 27.8217773,16.2314453 27.8217773,16.2314453" id="arrow" stroke="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M77.5073241,1.51872712e-07 L77.5073241,28.4020998 C78.6635698,28.4446911 80.5151538,29.5629884 80.5146484,31.2448732 C80.5141429,32.926758 79.6027831,33.9535781 77.8728027,33.9991581 C76.1428222,34.044738 75.19458,32.2244999 75.19458,32.2244999" id="arrow" stroke="#000000" sketch:type="MSShapeGroup"></path>
+            <g id="Line-+-Line-2" sketch:type="MSLayerGroup" transform="translate(73.000000, 33.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0,9.5 L3.50378704,0.996212989" id="Line" sketch:type="MSShapeGroup"></path>
+                <path d="M6.24632618,10.7536736 L11,1" id="Line" sketch:type="MSShapeGroup" transform="translate(8.500000, 6.000000) scale(1, -1) translate(-8.500000, -6.000000) "></path>
+            </g>
+            <rect id="box-2" fill="#42E1FF" sketch:type="MSShapeGroup" transform="translate(78.000000, 51.500000) rotate(4.000000) translate(-78.000000, -51.500000) " x="71.5" y="41.5" width="13" height="20"></rect>
+        </g>
+    </g>
+</svg>

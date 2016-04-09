@@ -1,0 +1,16 @@
+
+<div class="row1">
+    <span class="id">#{{value.id}}</span>
+    <img class="avatar" ng-src="{{value.from.avatar}}" />
+    <span class="from">{{value.from.name}}</span>
+    <span class="arrow"></span>
+    <span class="to">{{value.to.name}}</span>
+    <span class="fileName">{{value.file.name}}</span>
+</div>
+<div class="row2">
+ 	<span trims-circle-mark type="value.file.operation" isself="value.file.isSelf"></span>
+    <p>{{value.content}}</p>
+</div>
+<div class="row3">
+    <p>最后更新 {{value.lastUpdateTime | date:"yyyy-M-d h:mm"}}</p>
+</div>

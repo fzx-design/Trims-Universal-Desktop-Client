@@ -1,0 +1,111 @@
+<div class="inspector">
+
+    <div class="top">
+
+        <!-- 切换按钮 -->
+        <div class="switches">
+            <button ng-model="inspector.status" trims-radio="'history'" class="trims-btn-menu icon_history" />
+            <button ng-model="inspector.status" trims-radio="'feedback'" class="trims-btn-menu icon_feedback" />
+            <button ng-model="inspector.status" trims-radio="'info'" class="trims-btn-menu icon_info" />
+        </div>
+
+        <!-- 历史纪录 title -->
+        <div class="title" ng-show="inspector.status=='history'">
+            <p>{{inspector.history.type=='file'?inspector.history.name:'更新历史'}}</p>
+            <span>{{inspector.history.type=='file'?inspector.history.size:''}}</span>
+        </div>
+
+        <!-- 反馈信息 title -->
+        <div class="title" ng-show="inspector.status=='feedback'">
+            <p>{{inspector.history.type=='file'?inspector.history.name:'全部问题'}}</p>
+
+            <div class="trims-switch-group">
+                <button class="trims-btn" ng-model="inspector.feedbackMode" btn-radio="'open'">
+                    待解决 ({{inspector.feedback.open.length}})
+                </button>
+                <button class="trims-btn" ng-model="inspector.feedbackMode" btn-radio="'closed'">
+                    已解决
+                </button>
+            </div>
+        </div>
+
+        <!--   信息   title -->
+        <div class="title" ng-show="inspector.status=='info'">
+            <p>{{inspector.info.name}}</p>
+        </div>
+    </div>
+
+    <!-- 历史纪录 -->
+    <div class="content-history" ng-show="inspector.status=='history'">
+        <div class="trims-inspector-history" ng-repeat="userHistory in inspector.history.history" value="userHistory" type="inspector.history.type" ></div>
+    </div>
+
+    <!-- 反馈信息 -->
+    <div class="content-history" ng-show="inspector.status=='feedback'">
+        <div class="trims-inspector-feedback" ng-repeat="feedback in inspector.feedback[inspector.feedbackMode]" value="feedback"></div>
+    </div>
+
+    <!--   信息   -->
+    <div class="content-info" ng-show="inspector.status=='info'">
+        
+        <div class="user-info">
+            <img ng-src="{{inspector.info.createdBy.avatar}}" />
+            <p class="creatorName">{{inspector.info.createdBy.name}} 创建</p>
+            <p class="createTime">创建时间：{{inspector.info.createdBy.time | date:"yyyy-M-d h:mm"}}</p>
+            <p ng-show="inspector.info.type=='file'" class="updateTime">最后更新：<img ng-src="{{inspector.info.updatedBy.avatar}}"> <span>{{inspector.info.updatedBy.name}}</span> {{inspector.info.updatedBy.time | date:"yyyy-M-d h:mm"}}</p>
+        </div>
+
+        <div ng-show="inspector.info.type=='file'" class="file-info">
+            <p class="title">基本信息</p>
+            <p>{{inspector.info.format}} 文件，{{inspector.info.size}}</p>
+            <button class="trims-btn-sub">查看和截图</button>
+            <hr style="margin-top: 15px;">
+            <p class="title">本地副本位置</p>
+            <p style="margin-bottom: 6px;"><span class="path" ng-repeat="path in inspector.info.location.split('/')">{{path}}</span></p>
+            <button class="trims-btn-sub">在 Finder 中显示</button>
+        </div>
+
+        <div ng-show="inspector.info.type=='project'" class="file-info">
+            
+            <p class="title">项目容量</p>
+            <p class="files">{{inspector.info.fileNumber}} 个文件，{{inspector.info.projectSize}}GB</p>
+            <div class="capacityBarOuter">
+                <div class="capacityBar">
+                    <p class="projectSize" style="width:{{100*inspector.info.projectSize/(inspector.info.projectSize+inspector.info.usedSpace+inspector.info.leftSpace)}}%">
+                        <span>{{inspector.info.projectSize}}G</span>
+                    </p>
+                    <p class="usedSpace" style="width:{{100*inspector.info.usedSpace/(inspector.info.projectSize+inspector.info.usedSpace+inspector.info.leftSpace)}}%">
+                        <span>{{inspector.info.usedSpace}}G</span>
+                    </p>
+                    <p class="leftSpace" style="width:{{100*inspector.info.leftSpace/(inspector.info.projectSize+inspector.info.usedSpace+inspector.info.leftSpace)}}%">
+                        <span>{{inspector.info.leftSpace}}G</span>
+                    </p>
+                </div><!--
+                --><button ng-click="goHelp()" class="trims-btn help">?</button>
+            </div>
+            <button class="trims-btn-sub">续费 / 升级容量</button>
+            <hr>
+            <p class="title">本地副本位置</p>
+            <p style="margin-bottom: 8px;"><span class="path" ng-repeat="path in inspector.info.location.split('/')">{{path}}</span></p>
+            <div class="pathButtons">
+                <button class="trims-btn-sub left">在 Finder 中显示</button><!--
+                --><button class="trims-btn-sub right">变更位置</button>
+            </div>  
+            <hr>
+            <p class="title">项目参与者 ({{inspector.info.participants.length}}/5)</p>
+
+            <div ng-repeat="user in inspector.info.participants" class="participates">
+                <img ng-src="{{user.avatar}}" />
+                <p>{{user.name}} 创建</p>
+            </div>
+
+            <div class="participates">
+                <div class="add"></div>
+                <p>添加参与者</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

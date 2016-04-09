@@ -1,0 +1,18 @@
+
+<div class="projects" style="{{projects.showSideView?'':'left:-178px;'}}">
+    <div class="user">
+        <div style="float: left;">
+            <img class="avatar" ng-src="{{user.avatar}}">
+        </div>
+        <div style="float: left;">
+            <div class="info">
+                <p>{{user.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="project" ng-repeat="project in projects.list"  ng-click='changeProject(project)' ng-class="{true: 'active', false: ''}[projects.current.id==project.id]">
+            {{project.name}}
+        </div>
+    </div>
+</div>

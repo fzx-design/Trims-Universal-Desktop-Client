@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 120,
+            "name": "Trims",
+            "description": ""
+        },
+        {
+            "id": 225,
+            "name": "VCard 5",
+            "description": ""
+        },
+        {
+            "id": 312,
+            "name": "Happy Sonic Town",
+            "description": ""
+        }
+    ]
+}

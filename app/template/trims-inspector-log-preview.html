@@ -1,0 +1,16 @@
+<div class="title {{isExpand?'expand':'fold'}}" ng-click="toggle()" >
+  <span trims-circle-mark type="value.operation" isself="value.isSelf"></span>
+  <span style="font-size: 14px; margin-left: 5px;">
+      {{value.name}}</span>
+</div>
+
+<div class='content'>
+  <div class='preview'>
+    <img ng-src="{{value.snapshotUrl}}">
+  </div>
+  <div class='msg'>
+    <span>{{value.msg}}</span>
+  </div>
+  <button class="trims-btn-sub" ng-if="type=='file'">回滚到此版本</button>
+  <button class="trims-btn-sub" ng-if="type=='project'">查看和回滚文件历史</button>
+</div>

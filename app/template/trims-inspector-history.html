@@ -1,0 +1,9 @@
+
+<div class="user-info">
+    <img ng-src="{{value.user.avatar}}" />
+    <p>{{value.user.name}}</p>
+</div>
+<div class="history" ng-repeat="log in value.logs">
+    <p class="timestamp">{{log.time | date:"yyyy-M-d h:mm"}}</p>
+    <div class="trims-inspector-log-preview" ng-repeat="file in log.files" value="file" type="type"></div>
+</div>
